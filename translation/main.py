@@ -1,11 +1,12 @@
-from models import google, youdao, iciba
+from models import google, youdao, iciba, baidu
 from tools import verify_language_flag, test_proxies
 from exception import TranslationException
 
 TRANSLATION_DICT = {
     'google' : google,
     'youdao' : youdao,
-    'iciba'  : iciba, }
+    'iciba'  : iciba,
+    'baidu'  : baidu, }
 DEFAULT = 'youdao'
 
 class Translation(object):
