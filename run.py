@@ -1,4 +1,3 @@
-from translation import Translation
+from translation import Translation, baidu
 
-t = Translation(default = ['baidu'])
-print(t.get('hello', dst = 'zh'))
+print(baidu('hello', dst = 'zh'))
