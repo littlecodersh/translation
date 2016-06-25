@@ -3,9 +3,10 @@ import time, re, json
 
 import requests
 
+BASE_URL = 'http://fanyi.baidu.com/v2transapi'
+
 headers = {
     'User-Agent': 'Mozilla/5.0 (Windows NT 6.1; WOW64; rv:5.0) Gecko/20100101 Firefox/5.0', }
-url = 'http://translate.google.cn/translate_a/t'
 def correct_txt(text):
     url = 'http://correctxt.baidu.com/correctxt'
     jQueryFlag = 'jQuery1113014284725192946546_1466505692432'
@@ -24,7 +25,7 @@ def correct_txt(text):
 def baidu(text, src, dst, proxies):
     text = correct_txt(text)
     if text == '': return ''
-    url = 'http://fanyi.baidu.com/v2transapi'
+    url = BASE_URL
     data = {
         'from': src,
         'to': dst,

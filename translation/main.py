@@ -1,13 +1,5 @@
-from models import google, youdao, iciba, baidu
+from models import TRANSLATION_DICT, DEFAULT
 from tools import verify_language_flag, test_proxies
-from exception import TranslationException
-
-TRANSLATION_DICT = {
-    'google' : google,
-    'youdao' : youdao,
-    'iciba'  : iciba,
-    'baidu'  : baidu, }
-DEFAULT = 'youdao'
 
 class Translation(object):
     def __init__(self, default = [DEFAULT], src = 'auto',
@@ -22,7 +14,6 @@ class Translation(object):
                 self.default.append(i)
         if not self.default: self.default = [DEFAULT]
     def set_default_language(self, src, dst):
-        for i in (src, dst): verify_language_flag(i)
         self.src = src
         self.dst = dst
     def set_default_proxies(self, proxies):
@@ -34,10 +25,8 @@ class Translation(object):
         src     = src     or self.src
         dst     = dst     or self.dst
         proxies = proxies or self.proxies
-        if default not in TRANSLATION_DICT.keys():
-            raise TranslationException, 'No such translation: ' + default
-        for i in (src, dst): verify_language_flag(i)
-        test_proxies(proxies)
+        for i in (src, dst): verify_language_flag(i, default)
+        test_proxies(proxies, default)
         return TRANSLATION_DICT[default](text, src, dst, proxies)
     def get_all(self, text, default = None, src = None,
             dst = None, proxies = None):

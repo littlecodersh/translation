@@ -1,11 +1,11 @@
 __version__ = '1.0.0'
-__all__ = ['Translation', 'TranslationException'
+__all__ = ['Translation', 'TranslateError', 'ConnecteError',
     'set_default_translation', 'set_default_language', 
     'set_default_proxies', 'get', 'get_all', 
     'google', 'youdao', 'iciba', 'baidu']
 
 from main import Translation
-from exception import TranslationException
+from exception import TranslateError, ConnecteError
 
 t = Translation()
 set_default_translation = t.set_default_translation
