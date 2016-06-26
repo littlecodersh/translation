@@ -18,4 +18,4 @@ def google(text, src, dst, proxies):
     return requests.post(BASE_URL, params, headers = headers, proxies = proxies).json()[0]
 
 if __name__ == '__main__':
-    print(google('Test', 'auto', 'zh-CN', {'http': 'http://127.0.0.1:22397'}))
+    print(google('Test', 'auto', 'zh-CN', {'http': 'http://127.0.0.1:1080'}))

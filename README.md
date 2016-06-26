@@ -11,9 +11,12 @@ pip install translation
 Try:
 
 ```python
-from translation import baidu
+from translation import baidu, google, youdao, iciba
 
-print(baidu('hello', dst = 'zh'))
+print(baidu('hello world!', dst = 'zh'))
+print(youdao('hello world!', dst = 'zh-CN'))
+print(iciba('hello world!', dst = 'zh'))
+print(google('hello world!', dst = 'zh-CN', proxies = {'http': '127.0.0.1:1080'}))
 ```
 
 Language:

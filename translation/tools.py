@@ -14,10 +14,13 @@ def verify_language_flag(flag, defaultLanguage):
 
 def test_proxies(proxies, defaultLanguage):
     try:
-        requests.get(BASE_URL_LIST[defaultLanguage], proxies, timeout = 3)
+        requests.get(BASE_URL_LIST[defaultLanguage], proxies = proxies, timeout = 3)
     except requests.exceptions.ConnectionError, e:
-        raise ConnecteError, e.message
+        raise ConnecteError, str(e.message)
     except requests.exceptions.ConnectTimeout:
+        raise ConnecteError, ('Proxies can\'t work properly, \
+                you need to set or change a proxy')
+    except requests.exceptions.ProxyError:
         raise ConnecteError, ('Proxies can\'t work properly, \
                 you need to set or change a proxy')
     except AttributeError:
