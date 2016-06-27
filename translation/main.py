@@ -8,6 +8,7 @@ class Translation(object):
         self.set_default_language(src, dst)
         self.set_default_proxies(proxies)
     def set_default_translation(self, default):
+        if isinstance(default, str): default = [default]
         self.default = []
         for i in default:
             if i in TRANSLATION_DICT.keys():

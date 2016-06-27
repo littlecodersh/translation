@@ -1,6 +1,6 @@
 import requests
 
-from exception import TranslateError, ConnecteError
+from exception import TranslateError, ConnectError
 from models import TRANSLATION_DICT, BASE_URL_LIST, languageDict
 
 def verify_language_flag(flag, defaultLanguage):
@@ -16,12 +16,12 @@ def test_proxies(proxies, defaultLanguage):
     try:
         requests.get(BASE_URL_LIST[defaultLanguage], proxies = proxies, timeout = 3)
     except requests.exceptions.ConnectionError, e:
-        raise ConnecteError, str(e.message)
+        raise ConnectError, str(e.message)
     except requests.exceptions.ConnectTimeout:
-        raise ConnecteError, ('Proxies can\'t work properly, \
+        raise ConnectError, ('Proxies can\'t work properly, \
                 you need to set or change a proxy')
     except requests.exceptions.ProxyError:
-        raise ConnecteError, ('Proxies can\'t work properly, \
+        raise ConnectError, ('Proxies can\'t work properly, \
                 you need to set or change a proxy')
     except AttributeError:
-        raise ConnecteError, ('Proxies have wrong format')
+        raise ConnectError, ('Proxies have wrong format')
