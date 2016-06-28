@@ -32,5 +32,5 @@ class Translation(object):
     def get_all(self, text, default = None, src = None,
             dst = None, proxies = None):
         d = {}
-        for t in default: d[t] = self.get(text, t, src, dst, proxies)
+        for t in (default or self.default): d[t] = self.get(text, t, src, dst, proxies)
         return d

@@ -1,30 +1,85 @@
 translation
 ===========
 
-A python translation package
+|python27| `Chinese Version <https://github.com/littlecodersh/translation/blob/master/README.md>`__
 
-**Installation:**
+translation is a python translation package based on website service.
+
+It provids google, youdao, baidu, iciba translation service.
+
+**Installation**
 
 .. code:: bash
 
     pip install translation
 
-**Try:**
+**Usage**
 
 .. code:: python
 
     from translation import baidu, google, youdao, iciba
 
-    print(baidu('hello world!', dst = 'zh'))
-    print(youdao('hello world!', dst = 'zh-CN'))
-    print(iciba('hello world!', dst = 'zh'))
-    print(google('hello world!', dst = 'zh-CN', proxies = {'http': '127.0.0.1:1080'}))
+    print(
+        baidu('hello world!', dst = 'zh'),
+        youdao('hello world!', dst = 'zh-CN'),
+        iciba('hello world!', dst = 'zh'),
+        google('hello world!', dst = 'zh-CN'))
 
-**Language:**
+**Documents**
+
+You may find document `here <https://translation.readthedocs.org/zh/latest/>`__
+
+**Advanced usage**
+
+*Proxies*
+
+You may not use some of the function without proxies.
+
+Proxies can be set as following.
+
+.. code:: python
+
+    from translation import google, ConnectError
+
+    # 127.0.0.1:1080 is a vaild proxies
+    try:
+        print(google('hello world!', dst = 'zh-CN', proxies = {'http': '127.0.0.1:1080'}))
+    except ConnectError:
+        print('Invaild proxy')
+
+*Default*
+
+You may change default setting such as:
+
+* default source language (auto if not set)
+* default destination language (zh-CN if not set)
+* default translation (youdao if not set)
+* default proxies (no proxy if not set)
+
+.. code:: python
+
+    from translation import (set_default_translation, set_default_language,
+        set_default_proxies, get, ConnectError)
+
+    set_default_translation('google')
+    set_default_language('auto', 'zh-CN')
+    set_default_proxies({'http': '127.0.0.1:1080'})
+    try:
+        print(get('hello world!'))
+    except ConnectError:
+        print('Invaild proxy')
+
+**More**
+
+More functions are introduced in the `document <https://translation.readthedocs.org/zh/latest/>`__.
+
+**Language**
+
+Language list of all the translation are provided in `document <https://translation.readthedocs.org/zh/latest/>`__.
 
 *Google*
 
-::
+.. code:: bash
 
     el    : Greek,
     eo    : Esperanto,
@@ -91,59 +146,8 @@ A python translation package
     ms    : Malay,
     sr    : Serbian
 
-*Baidu*
+**Comments**
 
-::
+If you have any problem or suggestion, you may contact me in this `issue <https://github.com/littlecodersh/translation/issues/1>`__.
 
-    auto   自动检测
-    zh     中文
-    en     英语
-    yue    粤语
-    wyw    文言文
-    jp     日语
-    kor    韩语
-    fra    法语
-    spa    西班牙语
-    th     泰语
-    ara    阿拉伯语
-    ru     俄语
-    pt     葡萄牙语
-    de     德语
-    it     意大利语
-    el     希腊语
-    nl     荷兰语
-    pl     波兰语
-    bul    保加利亚语
-    est    爱沙尼亚语
-    dan    丹麦语
-    fin    芬兰语
-    cs     捷克语
-    rom    罗马尼亚语
-    slo    斯洛文尼亚语
-    swe    瑞典语
-    hu     匈牙利语
-    cht    繁体中文
-
-*iciba*
-
-::
-
-    zh   中文
-    ja   日语
-    es   西班牙语
-    en   英文
-    ko   韩语
-    fr   法语
-    de   德语
-
-*youdao*
-
-::
-
-    zh-CN   中文
-    en      英文
-    ja      日语
-    kr      韩语
-    ru      俄语
-    sp      西班牙语
-    fr      法语
+.. |python27| image:: https://img.shields.io/badge/python-2.7-ff69b4.svg

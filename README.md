@@ -17,11 +17,10 @@ pip install translation
 ```python
 from translation import baidu, google, youdao, iciba
 
-print(
-    baidu('hello world!', dst = 'zh'),
-    youdao('hello world!', dst = 'zh-CN'),
-    iciba('hello world!', dst = 'zh'),
-    google('hello world!', dst = 'zh-CN'))
+print(baidu('hello world!', dst = 'zh'))
+print(youdao('hello world!', dst = 'zh-CN'))
+print(iciba('hello world!', dst = 'zh'))
+print(google('hello world!', dst = 'zh-CN'))
 ```
 
 ## Documents
@@ -65,17 +64,6 @@ try:
     print(get('hello world!'))
 except ConnectError:
     print('Invaild proxy')
-```
-
-### Get all translation
-
-你也可以一次获取多个翻译。
-
-```python
-from translation import set_default_translation, get_all
-
-set_default_translation(['google', 'baidu', 'youdao'])
-print(repr(get_all('hello world!')))
 ```
 
 ### More
