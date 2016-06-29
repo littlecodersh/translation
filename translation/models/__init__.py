@@ -6,11 +6,19 @@ from language import languageDict
 
 DEFAULT = 'youdao'
 
+def translation_wrapper(fn):
+    def _translation_wrapper(*args, **kwargs):
+        try:
+            return fn(*args, **kwargs)
+        except:
+            return ''
+    return _translation_wrapper
+
 TRANSLATION_DICT = {
-    'google' : google.google,
-    'youdao' : youdao.youdao,
-    'iciba'  : iciba.iciba,
-    'baidu'  : baidu.baidu, }
+    'google' : translation_wrapper(google.google),
+    'youdao' : translation_wrapper(youdao.youdao),
+    'iciba'  : translation_wrapper(iciba.iciba),
+    'baidu'  : translation_wrapper(baidu.baidu), }
 
 BASE_URL_LIST = {
     'google' : google.BASE_URL,

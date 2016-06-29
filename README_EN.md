@@ -6,7 +6,7 @@ translation is a python translation package based on website service.
 
 It provids google, youdao, baidu, iciba translation service.
 
-## Installation:
+## Installation
 
 ```bash
 pip install translation
@@ -70,7 +70,7 @@ except ConnectError:
 
 More functions are introduced in the [document](https://translation.readthedocs.org/zh/latest/).
 
-## Language:
+## Language
 
 Language list of all the translation are provided in [document](https://translation.readthedocs.org/zh/latest/).
 
