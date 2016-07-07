@@ -29,7 +29,7 @@ print(iciba('hello world!', dst = 'zh'))
 
 ## Documents
 
-你可以在[这里](https://translation.readthedocs.org/zh/latest/)获取api的使用帮助。
+你可以在[这里](http://translation.readthedocs.io/zh_CN/latest/)获取api的使用帮助。
 
 ## Advanced usage
 
@@ -72,11 +72,11 @@ except ConnectError:
 
 ### More
 
-更多的功能可以参考[文档](https://translation.readthedocs.org/zh/latest/)。
+更多的功能可以参考[文档](http://translation.readthedocs.io/zh_CN/latest/)。
 
 ## Language
 
-[文档](https://translation.readthedocs.org/zh/latest/)中有详细的支持语言的列表，这里仅给出谷歌支持语言的标记列表。
+[文档](http://translation.readthedocs.io/zh_CN/latest/)中有详细的支持语言的列表，这里仅给出谷歌支持语言的标记列表。
 
 其中金山词霸，有道翻译仅支持文档给出的语言翻译为中文。
 

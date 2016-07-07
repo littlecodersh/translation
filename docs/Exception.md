@@ -4,7 +4,7 @@
 * 使用了错误的指定翻译（仅支持谷歌、有道、百度、金山）
 * 使用了错误的语言flag
 
-*使用了错误的制定翻译*
+**使用了错误的制定翻译**
 
 ```python
 from translation import get, TranslateError
@@ -17,7 +17,7 @@ except TranslateError as e:
 # 将会显示：No such translation: humanbrain
 ```
 
-*使用了错误的语言flag*
+**使用了错误的语言flag**
 
 ```python
 from translation import get, TranslateError
@@ -37,7 +37,7 @@ except TranslateError as e:
 * 无法连接网络或者网络连接时间过长
 * 代理服务器不可用
 
-*无法连接网络或者网络连接时间过长*
+**无法连接网络或者网络连接时间过长**
 
 ```python
 # 比如拔掉了网线以后 = =
@@ -56,7 +56,7 @@ except ConnectError as e:
 # sh a new connection: [Errno 11001] getaddrinfo failed',))
 ```
 
-*代理服务器不可用*
+**代理服务器不可用**
 
 ```python
 # 比如 127.0.0.1:9012 不是你的代理端口
@@ -73,3 +73,4 @@ except ConnectError as e:
 # http://fanyi.baidu.com/v2transapi (Caused by ProxyError('Cannot connect to proxy
 # .', NewConnectionError('<requests.packages.urllib3.connection.HTTPConnection obj
 # ect at 0x027AD410>: Failed to establish a new connection: [Errno 10061] ',)))
+```

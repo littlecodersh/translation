@@ -28,7 +28,7 @@ It provids google, youdao, baidu, iciba translation service.
 
 **Documents**
 
-You may find document `here <https://translation.readthedocs.org/zh/latest/>`__
+You may find document `here <http://translation.readthedocs.io/zh_CN/latest/>`__
 
 **Advanced usage**
 
@@ -72,11 +72,11 @@ You may change default setting such as:
 
 **More**
 
-More functions are introduced in the `document <https://translation.readthedocs.org/zh/latest/>`__.
+More functions are introduced in the `document <http://translation.readthedocs.io/zh_CN/latest/>`__.
 
 **Language**
 
-Language list of all the translation are provided in `document <https://translation.readthedocs.org/zh/latest/>`__.
+Language list of all the translation are provided in `document <http://translation.readthedocs.io/zh_CN/latest/>`__.
 
 Somehow, iciba and youdao can only provide English translation.
 

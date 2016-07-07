@@ -27,7 +27,7 @@ print(iciba('hello world!', dst = 'zh'))
 
 ## Documents
 
-You may find document [here](https://translation.readthedocs.org/zh/latest/).
+You may find document [here](http://translation.readthedocs.io/zh_CN/latest/).
 
 ## Advanced usage
 
@@ -70,11 +70,11 @@ except ConnectError:
 
 ### More
 
-More functions are introduced in the [document](https://translation.readthedocs.org/zh/latest/).
+More functions are introduced in the [document](http://translation.readthedocs.io/zh_CN/latest/).
 
 ## Language
 
-Language list of all the translation are provided in [document](https://translation.readthedocs.org/zh/latest/).
+Language list of all the translation are provided in [document](http://translation.readthedocs.io/zh_CN/latest/).
 
 Somehow, iciba and youdao can only provide English translation.
 
