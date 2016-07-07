@@ -20,7 +20,7 @@ def correct_txt(text):
     t = requests.get(url, params, headers = headers).text
     try:
         return json.loads(re.search('%s\((.*?)\)$'%jQueryFlag, t).groups()[0])['correctxt']
-    except AttributeError, ValueError:
+    except (AttributeError, ValueError):
         return ''
 def baidu(text, src, dst, proxies):
     text = correct_txt(text)

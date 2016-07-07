@@ -1,6 +1,6 @@
 # translation
 
-![python](https://img.shields.io/badge/python-2.7-ff69b4.svg) [English version](https://github.com/littlecodersh/translation/blob/master/README.md)
+![python](https://img.shields.io/badge/python-2.7-ff69b4.svg) ![python35](https://img.shields.io/badge/python-3.5-green.svg) [English version](https://github.com/littlecodersh/translation/blob/master/README.md)
 
 translation is a python translation package based on website service.
 
@@ -17,10 +17,12 @@ pip install translation
 ```python
 from translation import baidu, google, youdao, iciba
 
+print(google('hello world!', dst = 'zh-CN'))
+print(google('hello world!', dst = 'ru'))
 print(baidu('hello world!', dst = 'zh'))
+print(baidu('hello world!', dst = 'ru'))
 print(youdao('hello world!', dst = 'zh-CN'))
 print(iciba('hello world!', dst = 'zh'))
-print(google('hello world!', dst = 'zh-CN'))
 ```
 
 ## Documents
@@ -73,6 +75,8 @@ More functions are introduced in the [document](https://translation.readthedocs.
 ## Language
 
 Language list of all the translation are provided in [document](https://translation.readthedocs.org/zh/latest/).
+
+Somehow, iciba and youdao can only provide English translation.
 
 **Google**
 ```

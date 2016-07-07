@@ -1,6 +1,6 @@
-from models import TRANSLATION_DICT, DEFAULT
-from tools import verify_language_flag, test_proxies
-from exception import TranslateError
+from .models import TRANSLATION_DICT, DEFAULT
+from .tools import verify_language_flag, test_proxies
+from .exception import TranslateError
 
 class Translation(object):
     def __init__(self, default = [DEFAULT], src = 'auto',
@@ -30,7 +30,7 @@ class Translation(object):
         for i in (src, dst): verify_language_flag(i, default)
         test_proxies(proxies, default)
         r =  TRANSLATION_DICT[default](text, src, dst, proxies)
-        if r == '': raise TranslateError, 'No translation get, you may retry'
+        if r == '': raise TranslateError('No translation get, you may retry')
         return r
     def get_all(self, text, default = None, src = None,
             dst = None, proxies = None):

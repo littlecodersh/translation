@@ -1,7 +1,7 @@
 translation
 ===========
 
-|python27| `Chinese Version <https://github.com/littlecodersh/translation/blob/master/README.md>`__
+|python27| |python35| `Chinese Version <https://github.com/littlecodersh/translation/blob/master/README.md>`__
 
 translation is a python translation package based on website service.
 
@@ -19,11 +19,12 @@ It provids google, youdao, baidu, iciba translation service.
 
     from translation import baidu, google, youdao, iciba
 
-    print(
-        baidu('hello world!', dst = 'zh'),
-        youdao('hello world!', dst = 'zh-CN'),
-        iciba('hello world!', dst = 'zh'),
-        google('hello world!', dst = 'zh-CN'))
+    print(google('hello world!', dst = 'zh-CN'))
+    print(google('hello world!', dst = 'ru'))
+    print(baidu('hello world!', dst = 'zh'))
+    print(baidu('hello world!', dst = 'ru'))
+    print(youdao('hello world!', dst = 'zh-CN'))
+    print(iciba('hello world!', dst = 'zh'))
 
 **Documents**
 
@@ -76,6 +77,8 @@ More functions are introduced in the `document <https://translation.readthedocs.
 **Language**
 
 Language list of all the translation are provided in `document <https://translation.readthedocs.org/zh/latest/>`__.
+
+Somehow, iciba and youdao can only provide English translation.
 
 *Google*
 
@@ -151,3 +154,4 @@ Language list of all the translation are provided in `document <https://translat
 If you have any problem or suggestion, you may contact me in this `issue <https://github.com/littlecodersh/translation/issues/1>`__.
 
 .. |python27| image:: https://img.shields.io/badge/python-2.7-ff69b4.svg
+.. |python35| image:: https://img.shields.io/badge/python-3.5-green.svg

@@ -14,7 +14,6 @@ params = {
     'typoResult' : 'true', }
 
 def youdao(text, src, dst, proxies):
-    if dst[:2] != 'zh': raise Exception
     params['i'] = text
     return requests.post(BASE_URL, params, headers = headers, proxies = proxies
             ).json()['translateResult'][0][0]['tgt']

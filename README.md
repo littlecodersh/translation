@@ -1,10 +1,12 @@
 # translation
 
-![python](https://img.shields.io/badge/python-2.7-ff69b4.svg) [English version](https://github.com/littlecodersh/translation/blob/master/README_EN.md)
+![python27](https://img.shields.io/badge/python-2.7-ff69b4.svg) ![python35](https://img.shields.io/badge/python-3.5-green.svg) [English version](https://github.com/littlecodersh/translation/blob/master/README_EN.md)
 
 translation是一个基于网页端翻译的python翻译包。
 
 提供基本的谷歌、有道、百度、金山翻译服务。
+
+目前提供的谷歌的翻译服务暂时不需要使用代理。
 
 ## Installation
 
@@ -17,10 +19,12 @@ pip install translation
 ```python
 from translation import baidu, google, youdao, iciba
 
+print(google('hello world!', dst = 'zh-CN'))
+print(google('hello world!', dst = 'ru'))
 print(baidu('hello world!', dst = 'zh'))
+print(baidu('hello world!', dst = 'ru'))
 print(youdao('hello world!', dst = 'zh-CN'))
 print(iciba('hello world!', dst = 'zh'))
-print(google('hello world!', dst = 'zh-CN'))
 ```
 
 ## Documents
@@ -73,6 +77,8 @@ except ConnectError:
 ## Language
 
 [文档](https://translation.readthedocs.org/zh/latest/)中有详细的支持语言的列表，这里仅给出谷歌支持语言的标记列表。
+
+其中金山词霸，有道翻译仅支持文档给出的语言翻译为中文。
 
 **Google**
 ```

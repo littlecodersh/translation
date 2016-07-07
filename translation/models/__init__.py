@@ -1,8 +1,8 @@
 __all__ = ['DEFAULT', 'TRANSLATION_DICT',
     'BASE_URL_LIST', 'languageDict']
 
-import google, youdao, iciba, baidu
-from language import languageDict
+from . import google, youdao, iciba, baidu
+from .language import languageDict
 
 DEFAULT = 'youdao'
 

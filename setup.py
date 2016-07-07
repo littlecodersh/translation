@@ -1,4 +1,3 @@
-#coding=utf8
 from setuptools import setup, find_packages
 from codecs import open
 from os import path
@@ -34,9 +33,10 @@ setup(
         'License :: OSI Approved :: MIT License',
 
         'Programming Language :: Python :: 2.7',
+        'Programming Language :: Python :: 3.5',
     ],
 
-    keywords='message',
+    keywords='translate translation',
 
     # You can just specify the packages manually here if your project is
     # simple. Or you can use find_packages().
