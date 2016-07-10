@@ -42,7 +42,7 @@ setup(
     # simple. Or you can use find_packages().
     packages=find_packages(),
 
-    install_requires=[],
+    install_requires=['requests'],
 
     # List additional groups of dependencies here
     extras_require={},

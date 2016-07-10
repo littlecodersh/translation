@@ -1,4 +1,4 @@
-__version__ = '1.0.3'
+__version__ = '1.0.4'
 __all__ = ['Translation', 'TranslateError', 'ConnectError',
     'set_default_translation', 'set_default_language', 
     'set_default_proxies', 'get', 'get_all', 
