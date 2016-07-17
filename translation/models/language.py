@@ -6,4 +6,7 @@ languageDict = {
 'iciba': {"fr": "\u6cd5\u8bed", "en": "\u82f1\u6587", "zh": "\u4e2d\u6587", "de": "\u5fb7\u8bed", "ko": "\u97e9\u8bed", "ja": "\u65e5\u8bed", "es": "\u897f\u73ed\u7259\u8bed", "auto": "Auto"},
 
 'youdao': {"ru": "\u4fc4\u8bed", "fr": "\u6cd5\u8bed", "en": "\u82f1\u6587", "kr": "\u97e9\u8bed", "sp": "\u897f\u73ed\u7259\u8bed", "zh-CN": "\u4e2d\u6587", "ja": "\u65e5\u8bed", "auto": "Auto"},
+
+'bing': {"-": "Auto", "auto": "Auto", "el": "Greek", "zh-CHS": "Chinese Simplified", "zh-CHT": "Chinese Traditional", "af": "Afrikaans", "ko": "Korean", "ca": "Catalan", "it": "Italian", "cy": "Welsh", "ar": "Arabic", "otq": "Quer\u00e9taro Otomi", "cs": "Czech", "et": "Estonian", "id": "Indonesian", "es": "Spanish", "ru": "Russian", "mww": "Hmong Daw", "pt": "Portuguese", "no": "Norwegian", "tr": "Turkish", "lv": "Latvian", "lt": "Lithuanian", "en": "English", "th": "Thai", "vi": "Vietnamese", "ro": "Romanian", "pl": "Polish", "fr": "French", "bg": "Bulgarian", "uk": "Ukrainian", "hr": "Croatian", "sr-Cyrl": "Serbian (Cyrillic)", "de": "German", "ht": "Haitian Creole", "da": "Danish", "fa": "Persian", "hi": "Hindi", "fi": "Finnish", "hu": "Hungarian", "ja": "Japanese", "he": "Hebrew", "bs-Latn": "Bosnian (Latin)", "tlh": "Klingon", "sw": "Kiswahili", "sv": "Swedish", "ur": "Urdu", "sk": "Slovak", "mt": "Maltese", "tlh-Qaak": "Klingon (pIqaD)", "sr-Latn": "Serbian (Latin)", "ms": "Malay", "sl": "Slovenian", "yua": "Yucatec Maya", "nl": "Dutch"},
 }
+
