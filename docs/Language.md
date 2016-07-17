@@ -70,6 +70,63 @@ ms    : Malay,
 sr    : Serbian
 ```
 
+**bing**
+```
+af       : Afrikaans
+ar       : Arabic
+bs-Latn  : Bosnian (Latin)
+bg       : Bulgarian
+ca       : Catalan
+zh-CHS   : Chinese Simplified
+zh-CHT   : Chinese Traditional
+hr       : Croatian
+cs       : Czech
+da       : Danish
+nl       : Dutch
+en       : English
+et       : Estonian
+fi       : Finnish
+fr       : French
+de       : German
+el       : Greek
+ht       : Haitian Creole
+he       : Hebrew
+hi       : Hindi
+mww      : Hmong Daw
+hu       : Hungarian
+id       : Indonesian
+it       : Italian
+ja       : Japanese
+sw       : Kiswahili
+tlh      : Klingon
+tlh-Qaak : Klingon (pIqaD)
+ko       : Korean
+lv       : Latvian
+lt       : Lithuanian
+ms       : Malay
+mt       : Maltese
+no       : Norwegian
+fa       : Persian
+pl       : Polish
+pt       : Portuguese
+otq      : Querétaro Otomi
+ro       : Romanian
+ru       : Russian
+sr-Cyrl  : Serbian (Cyrillic)
+sr-Latn  : Serbian (Latin)
+sk       : Slovak
+sl       : Slovenian
+es       : Spanish
+sv       : Swedish
+th       : Thai
+tr       : Turkish
+uk       : Ukrainian
+ur       : Urdu
+vi       : Vietnamese
+cy       : Welsh
+yua      : Yucatec Maya
+```
+
 **Baidu**
 ```
 auto   自动检测

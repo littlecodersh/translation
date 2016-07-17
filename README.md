@@ -25,6 +25,7 @@ print(baidu('hello world!', dst = 'zh'))
 print(baidu('hello world!', dst = 'ru'))
 print(youdao('hello world!', dst = 'zh-CN'))
 print(iciba('hello world!', dst = 'zh'))
+print(bing('hello world!', dst = 'zh-CHS'))
 ```
 
 ## Documents
