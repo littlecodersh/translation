@@ -17,7 +17,7 @@ pip install translation
 ## Usage
 
 ```python
-from translation import baidu, google, youdao, iciba
+from translation import baidu, google, youdao, iciba, bing
 
 print(google('hello world!', dst = 'zh-CN'))
 print(google('hello world!', dst = 'ru'))
